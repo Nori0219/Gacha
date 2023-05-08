@@ -19,8 +19,26 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
     
         // Do any additional setup after loading the view.
+        number = Int.random(in: 0...9)
+        if number == 9 {
+            //激レア
+            characterImageView.image = UIImage(named: "IoTMesh")
+            backgroundImageView.image = UIImage(named: "bgBlue")
+        } else if number >= 7 {
+            
+            //レア
+            characterImageView.image = UIImage(named: "camera")
+            backgroundImageView.image = UIImage(named: "bgGreen")
+        } else {
+            //ノーマル
+            characterImageView.image = UIImage(named: "iphone")
+            backgroundImageView.image = UIImage(named: "bgRed")
+        }
     }
     
+    @IBAction func back() {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
