@@ -24,19 +24,19 @@ class ResultViewController: UIViewController {
             //激レア
             characterImageView.image = UIImage(named: "IoTMesh")
             backgroundImageView.image = UIImage(named: "bgBlue")
-        
+
         } else if number == 8 {
-            
+
             //激レア
             characterImageView.image = UIImage(named: "designer")
             backgroundImageView.image = UIImage(named: "bgBlue")
         } else if number == 7 {
-            
+
             //レア
             characterImageView.image = UIImage(named: "camera")
             backgroundImageView.image = UIImage(named: "bgGreen")
         } else if number == 6 {
-            
+
             //レア
             characterImageView.image = UIImage(named: "minecraft")
             backgroundImageView.image = UIImage(named: "bgGreen")
@@ -46,6 +46,8 @@ class ResultViewController: UIViewController {
             backgroundImageView.image = UIImage(named: "bgRed")
         }
     }
+    
+    
     
     @IBAction func back() {
         self.dismiss(animated: true, completion: nil)
